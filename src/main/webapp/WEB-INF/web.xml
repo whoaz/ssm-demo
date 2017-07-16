@@ -72,5 +72,14 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <el-ignored>false</el-ignored>
+            <page-encoding>UTF-8</page-encoding>
+            <scripting-invalid>true</scripting-invalid>
+            <include-prelude>/WEB-INF/views/taglib.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
 
 </web-app>
